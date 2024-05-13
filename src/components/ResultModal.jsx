@@ -20,7 +20,7 @@ const ResultModal = forwardRef(function ResultModal(
 
   return (
     <dialog ref={dialog} className="result-modal">
-      {userLost && <h2>You {result}</h2>}
+      {userLost && <h2>You lost</h2>}
       {!userLost && <h2>Your Score: {score}</h2>}
       <p>
         The target time was <strong>{targetTime} seconds.</strong>
